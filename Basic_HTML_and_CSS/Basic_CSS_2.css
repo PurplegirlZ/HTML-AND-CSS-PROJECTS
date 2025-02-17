@@ -1,0 +1,13 @@
+p {
+	color: indigo;
+	background-color: violet;
+	font-size: large;
+	text-align: right;
+	text-decoration: underline;	
+}
+h4 {
+	text-shadow: 1.5px 1.5px;
+}
+h5 {
+	text-shadow: 3px 3px;
+}
