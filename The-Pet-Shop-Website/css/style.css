@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    background-color: white;
+    overflow-x: hidden; /*stretch*/
+}
+
+/*NAVBAR*/
+
+li{
+    display: inline;
+    padding: 5px;
+}
+/*roboto*/
+a{
+    font-family:  'Roboto',sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: 1px .5px 4px rgba(46, 31, 31, 0.5);
+    color: white;
+    text-decoration: none; /*Removes the default style*/
+}
+
+a:hover{
+    color: #d7eaf7; /*Changes the color of the anchor element when a user hovers the mouse over the text*/
+}
+
+.nav-bar{
+    background-color: #216391;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*The following minus margins stretch the navbar background beyond the web browser screen edge*/
+    margin-top: -8px;
+    margin-left: -10px;
+    margin-right: -10px;
+    position: sticky; /*Stays in same spot*/
+    top: 0; /*at top while scroll*/
+}
+
+/*Creates a line under the Home and Contact links to separate them from the image links*/
+#nav-border{
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ffffff;
+}
