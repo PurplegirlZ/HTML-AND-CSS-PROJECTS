@@ -1,100 +1,138 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>The Pet Shop</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="Pet shop">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <!--NAVBAR-->
-        <nav class="nav-bar">
-            <ul id="nav-border">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-            <ul>
-                <a href="#cat"><li>Cats & Kittens</li></a>
-                <a href="#dog"><li>Dogs & Puppies</li></a>
-                <a href="#bird"><li>Birds</li></a>
-                <a href="#HH"><li>Hedgehog</li></a>
-                <a href="#axolotl"><li>Axolotl</li></a>
-                <a href="#quokka"><li>Don't look FBI!</li></a>
-                <a href="#videos"><li>Videos</li></a>
-            </ul>
-        </nav>
-        <!--Header-->
-        <header>
+
+<head>
+    <title>The Pet Shop</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Pet shop">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="icon/favicon-32x32.png">
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav class="nav-bar">
+        <ul id="nav-border">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <ul>
+            <a href="#cat">
+                <li>Cats & Kittens</li>
+            </a>
+            <a href="#dog">
+                <li>Dogs & Puppies</li>
+            </a>
+            <a href="#bird">
+                <li>Birds</li>
+            </a>
+            <a href="#HH">
+                <li>Hedgehog</li>
+            </a>
+            <a href="#axolotl">
+                <li>Axolotl</li>
+            </a>
+            <a href="#quokka">
+                <li>Don't look FBI!</li>
+            </a>
+            <a href="#videos">
+                <li>Videos</li>
+            </a>
+        </ul>
+    </nav>
+    <!--Header-->
+    <header>
+        <div>
+            <h1 class="animate-text">Welcome to the petshop!</h1>
+        </div>
+    </header>
+    <!--Blockquote-->
+    <blockquote cite="https://www.wikihow.com/Survive-an-Encounter-with-an-Ostrich">
+        Aim for the neck. Consider this to be the ostrich&apos;s weakest body part. Strike it where it is most
+        vulnerable and least protected to defeat it more quickly.
+    </blockquote>
+    <!--Pet Images-->
+    <section>
+        <div class="container">
+            <h2>Choose a Pet!</h2>
             <div>
-                <h1>Welcome to the petshop!</h1>
-            </div>
-        </header>
-        <!--Blockquote-->
-        <blockquote cite="https://www.wikihow.com/Survive-an-Encounter-with-an-Ostrich">
-            Aim for the neck. Consider this to be the ostrich&apos;s weakest body part. Strike it where it is most vulnerable and least protected to defeat it more quickly.
-            </blockquote>
-         <!--Pet Images-->
-         <section>
-            <div>
-                <h2>Choose a Pet!</h2>
-                <div>
-                    <!--CAT IMAGE-->
-                    <div id="cat">
+                <!--CAT IMAGE-->
+                <div id="cat" class="column">
+                    <div class="image-container">
                         <h3>Cats & Kittens</h3>
                         <img src="images/Whyhecage.jpeg" alt="Picture of a cat">
+                        <div class="overlay"></div>
                     </div>
-                    <!--DOG IMAGE-->
-                    <div id="dog">
+                </div>
+                <!--DOG IMAGE-->
+                <div id="dog" class="column">
+                    <div class="image-container">
                         <h3>Dogs & Puppies</h3>
                         <img src="images/What.jpeg" alt="Picture of puppy">
+                        <div class="overlay"></div>
                     </div>
-                    <!--Bird Image-->
-                    <div id="bird">
+                </div>
+                <!--Bird Image-->
+                <div id="bird" class="column">
+                    <div class="image-container">
                         <h3>Birds</h3>
                         <img src="images/birbs.jpeg" alt="Picture of birds">
+                        <div class="overlay"></div>
                     </div>
-                    <!--Hedgehog-->
-                    <div id="HH">
+                </div>
+                <!--Hedgehog-->
+                <div id="HH" class="column">
+                    <div class="image-container">
                         <h3>Hedgehog</h3>
                         <img src="images/Soinc.jpeg" alt="Picture of a hedgehog">
+                        <div class="overlay"></div>
                     </div>
-                    <!--Axolotl-->
-                    <div id="axolotl">
+                </div>
+                <!--Axolotl-->
+                <div id="axolotl" class="column">
+                    <div class="image-container">
                         <h3>Axolotl</h3>
                         <img src="images/AXOLOTL.jpeg" alt="AXOLOTL say that name won't go to hell">
+                        <div class="overlay"></div>
                     </div>
-                    <!--Quokka-->
-                    <div id="quokka">
+                </div>
+                <!--Quokka-->
+                <div id="quokka" class="column">
+                    <div class="image-container">
                         <h3>Quokka</h3>
                         <img src="images/Sweetface.jpeg" alt="Illegal pet Quokka">
+                        <div class="overlay"></div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!--Videos-->
-        <section>
-            <!--Dog video-->
-            <div id="videos">
-                <h3>Videos</h3>
-                <iframe width="720" height="435" src="https://www.youtube.com/embed/ng58pNPDDW4"></iframe>
-            </div>
-        </section>
-        <!--Footer-->
-        <footer>
-            <table>
-                <tr>
-                    <td>
-                        <p>The Pet Shop!&copy;</p>
-                    </td>
-                    <td>
-                        <p>123 Square Ave</p>
-                        <p>Portland, Or 97204</p>                       </p>
-                    </td>
-                    <td>
-                        <p>503-234-3966</p>
-                    </td>
-                </tr>
-            </table>
-        </footer>
-    </body>
+        </div>
+    </section>
+    <!--Videos-->
+    <section>
+        <!--Dog video-->
+        <div id="video" class="container">
+            <h3>Videos</h3>
+            <iframe width="720" height="435" src="https://www.youtube.com/embed/ng58pNPDDW4"></iframe>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <p>The Pet Shop!&copy;</p>
+                </td>
+                <td>
+                    <p>123 Square Ave</p>
+                    <p>Portland, Or 97204</p>
+                    </p>
+                </td>
+                <td>
+                    <p>503-234-3966</p>
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
+
 </html>
