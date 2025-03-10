@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Creating Effects with CSS</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav class="nav-bar">
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li class="drop">
+                <a href="#">Images</a>
+                <div class="rollover-menu">
+                    <a href="#i1">Image 1</a>
+                    <a href="#i2">Image 2</a>
+                    <a href="#i3">Image 3</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!--Images-->
+    <section>
+        <!--Image 1-->
+        <div class="image-container" id="i1">
+            <img src="images/45.jpg" alt="Can't wait til I'm 45">
+            <div class="overlay"></div>
+        </div>
+        <!--Image 2-->
+        <div class="image-container" id="i2">
+            <img src="images/lick.jpg" alt="Dog licked a baby head" class="zoom">
+        </div>
+        <!--Image 3-->
+        <div class="image-container" id="i3">
+            <div class="circle">
+                <img src="images/thetruth.jpg" alt="The bugs were huge in Egypt!">
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer>
+        <div class="footer-text">
+            <p>The Tech Academy &copy;</p>
+        </div>
+    </footer>
+</body>
+
+</html>
