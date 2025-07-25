@@ -1,0 +1,425 @@
+/*import link for Josefin Slab font from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital@0;1&display=swap');
+/*import link for Sacramento font from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+html{
+    overflow-x: hidden;/*prevents left to right scroll*/
+    scroll-behavior: smooth;/*makes page go fast*/
+}
+/*NAVAR*/
+.nav-bar{
+    position: sticky; /*Keeps nav at same spot on screen*/
+    top: 0;/*Tells it to be at the top*/
+    z-index: 9;/*Keeps the nav bar ontop of everything*/
+}
+
+ul{
+    display: flex;/*gives the elements a container to put them side by side*/
+    list-style-type: none;/*bullets gone*/
+    align-items: center;
+    margin: -8px -8px 0px -8px; /*top, right, bottom, left, will stretch background beyond edge of the screen*/
+    background-color: rgb(1,128,106);
+    border-bottom: 5px solid rgb(247,177,188);
+}
+
+a{
+    display: block; /*Displays anchor elemnts vertically so the drop down menu isn't horizontal*/
+    font-family: 'Josefin Slab', serif;
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(247,177,188);
+    text-align: center;
+    width: 100px;
+    padding: 20px;
+    text-decoration: none;
+    transition: 0.3s ease-in;
+}
+
+a:hover, .drop:hover a:only-of-type{ /*Targets single kids, will effect the recipe one*/
+    background-color: rgb(149,238,223);
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+    transition: 0.3s ease-in;
+}
+
+.rollover-menu{
+    display: none;/*Makes sure nothing is shown until it is told to show*/
+    position: absolute;/*put it on the element it is connected to*/
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/*Is the trigger element that makes all the food things show up when hovered over*/
+.drop:hover .rollover-menu{
+    display: block;
+}
+
+.rollover-menu a{
+    color: rgb(0,80,67);
+}
+
+.rollover-menu a:hover{
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(90,90,90,0.2);
+}
+
+a:hover{
+    background-color: rgb(149,238,223);
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+    transition: 0.3s ease-in;
+}
+
+.rollover-menu a:nth-child(1){
+    border-top: 5px solid rgb(238,118,136);
+}
+
+/*Footer*/
+footer{
+    align-items: center; /*Make the footer go to the middle*/
+    margin: 0px -8px -8px -8px; /*stretch*/
+    background-color: rgb(1,128,106);
+    border-top: 5px solid rgb(247,177,188);
+    bottom: 0; /*bottom of screen*/
+}
+
+table{
+    width: 100%; /*Will take up full width of screen no matter what*/
+}
+
+td{
+    width: 33%; /*1/3*/
+}
+
+td p{
+    font-family: 'Josefin Slab', serif;/*Font from fonts.google.com*/
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(247,177,188);
+}
+
+/*body*/
+
+.container{
+    display: inline-block;
+    background-size: 100%;
+    padding-top: 60px;
+    padding-left: 30px;
+}
+
+/*headers*/
+
+h1{
+    font-family: 'Sacramento', cursive; /*font from fonts.google.com*/
+    font-size: 80px;
+    color: rgb(0,80,67);
+    text-align: center;
+}
+
+h2,h3,h4{
+    font-family: 'Josefin Slab', serif; /*Font from fonts.google.com*/
+    text-align: center;
+}
+
+h2{
+    color: rgb(0,80,67);
+    font-size: 60px;
+    text-decoration: underline;
+    text-decoration-color: rgb(247,177,188);
+}
+
+h3{
+    font-size: 30px;
+}
+
+h4{
+    font-size: 15px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+h5{
+    font-size: 10px;
+    text-decoration: underline;
+    text-align: center;
+    color: gainsboro;
+}
+/*paragraph*/
+
+p{
+    font-family: 'Josefin Slab', serif; /*fonts.google.com*/
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0,80,67);
+    text-align: center;
+}
+
+/*Images*/
+
+
+/*position elements to sit next to eachother*/
+.column{
+    float: left;
+    width: 48%;
+    padding: 10px;
+}
+
+/*styling for screens 1200px or smaller*/
+@media screen and (max-width:1200px){
+    .column{
+        width: 100%;
+        padding: 0px;
+        margin-left: -15px; /*Centers the columns on screen*/
+    }
+}
+
+/*Specifically styles the first 7 img tag elements contained in element with the .column class*/
+.column img:nth-child(-n + 7){
+    width: 500px;
+    height: 350px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4),
+    0 6px 20px rgba(0,0,0,0.2);
+}
+
+.recipe-container{
+    width: 500px;
+    height: 350px;
+    margin: 100px auto 180px; /*top, rightandleft, bottom*/
+    perspective: 1000px; /*Tells the browser how much 3D space an element should take up*/
+}
+
+/*Style for mobile*/
+@media screen and (max-width:600px){
+    .column img:nth-child(-n + 7){
+        width:350px;
+        height: 225px;
+    }
+
+    .recipe-container{
+        width: 350px;
+        height: 325px;
+    }
+}
+
+.rcb{
+    background-color: rgb(149,238,223);
+}
+
+/*Changes it for smaller*/
+@media screen and (max-width:1200px){
+    #pork{
+        background-color: rgb(255,255,255);
+    }
+    #biscuits{
+        background-color: rgb(149,238,223);
+    }
+}
+
+/*Featured recipe*/
+
+/*styles the featured recipe h3 tag*/
+#FH{
+    font-family: 'Sacramento', cursive;/*Fonts.google.com*/
+    font-size: 60px;
+    color: rgb(0,80,67);
+}
+
+
+#FMT{
+    text-align: justify;
+    padding-top: 20px;
+    margin-left: 40px;
+}
+
+/*Sets margin left to 0 because not needed for smal*/
+@media screen and (max-width:1200px){
+    #FMT{
+        margin-left: 0;
+    }
+}
+
+/*Styyles the image*/
+@media screen and (mid-width:1600px){
+    #featured img{
+        width: 700px;
+        height: auto; /*Makes it height sameas it should be*/
+        margin-left: -100px;
+        margin-top: -20px; /*Will overwide styling for .recipe-container*/
+    }
+}
+
+/*abjust the feature img to be centered on devised of 1599 or less*/
+@media screen and (max-width: 1599px){
+    #feature img{
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #featured .rcb{
+        height: 300px;
+    }
+    #featured img{
+        margin-top: -65px;
+    }
+}
+
+#featured-button{
+    display: block; /*puts the button on its own line*/
+    margin: 60px auto 0px;
+    background-color: rgb(1,128,106);
+    border-radius: 35px;
+    border: none;/*removes default border*/
+    font-family: 'Josefin Slab', serif;/*fonts.google.com*/
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px 25px;
+    color: white;
+    cursor: pointer;
+}
+
+/*hover for button feature*/
+#featured-button:hover{
+    background-color: rgb(247,177,188);
+}
+
+/*Image flip*/
+
+/*Positions flip effect, defines transition time, defines 3D effect*/
+.flip{
+    position: relative;
+    width: 100%;
+    height: 100%; /*takes up all the space*/
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    transform-style: preserve-3d; /*treats the elements as 3D*/
+}
+
+.flip:hover{
+    transform: rotateY(-180deg);/*rotates element right to left*/
+}
+
+.flip-front, .flip-back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-back{
+    background-color: rgb(149,238,223);
+    border: 2px solid white;
+    transform: rotateY(180deg); /*Puts text back to normal*/
+}
+
+.text-container{
+    padding-top: 70px;
+}
+
+@media screen and (max-width:600px){
+    .text-container{
+        padding-top: 0px;
+    }
+}
+
+/*Recipe Button*/
+
+input[type="button"]{
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Josefin Slab', serif;/*From fonts.google.com*/
+    font-weight: bold;
+    font-size: 22px;
+    padding: 11px 17px;
+    color: rgb(1,128,106);
+    cursor: pointer;
+}
+
+input[type="button"]:hover{
+    background-color: rgb(247,177,188);
+    color: white;
+}
+
+/*Contact form*/
+
+/*Makes everything with the contact id centered on page*/
+#contact{
+    display: block;
+    margin-bottom: 70px;
+}
+
+form{
+    display: table; /*Table formmat for the form*/
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;/*The browser will automatically center the form*/
+}
+
+/*Target the input tags*/
+form input{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: rgb(165,165,165);
+    border: 2px solid rgb(165,165,165);
+    border-radius: 5px;
+    padding: 3px;
+    margin: 10px 15px 10px 0px;
+    transition: 0.3s ease-out; /*goes back to light grey when user clicks somewhere else*/
+}
+
+form input:focus{
+    border: 2px solid rgb(1,128,106);
+    color: black;
+    outline: none; /*Removes the default border*/
+    transition: 0.3s ease-out;
+}
+
+label{
+    font-family: 'Josefin Slab', serif; /*From fonts.google.com*/
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+textarea{
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    resize: both; /*Will allow the user to resize the text area in width and height*/
+    border: 3px solid rgb(165,165,165);
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(165,165,165);
+    font-size: 15px;
+    transition: 0.3s ease-out;/*Back to light grey*/
+}
+
+textarea:focus{
+    color: black;
+    border: 3px solid rgb(1,128,106);
+    transition: 0.3s ease-out;
+    outline: none;
+}
+
+input[type="submit"]{
+    background-color: rgb(1,128,106);
+    border: none;
+    border-radius: 35px;
+    font-family: "Josefin Slab", serif;/*Font from fonts.google.com*/
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 25px;
+    margin-top: 20px;
+    color: #fff;
+    cursor: pointer;
+    float: right;/*Positions button to bottom right*/
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(247,177,188);
+}
