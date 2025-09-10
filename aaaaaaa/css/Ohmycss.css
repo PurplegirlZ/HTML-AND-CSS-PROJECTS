@@ -1,0 +1,14 @@
+
+html{
+   scroll-behavior: smooth;
+}
+body{
+color: darkblue;
+background-color: lightblue;    
+}
+img{
+    border: 2px dashed red;
+}
+h3{
+    text-align: center;
+}
