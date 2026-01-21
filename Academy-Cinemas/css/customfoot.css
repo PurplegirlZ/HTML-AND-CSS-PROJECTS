@@ -1,0 +1,28 @@
+html{
+    scroll-padding-top: 100px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    background-color: darkslategrey;
+}
+
+h1{
+    color: transparent darkviolet;
+}
+
+footer{
+ margin-top: auto;
+ margin: auto -15px 0px -15px;
+}
+
+.Sora{
+    background-color: lightblue;
+    margin: auto -50px 0px -50px;
+}
+
+.Vanny{
+    background-color: yellow;
+}
